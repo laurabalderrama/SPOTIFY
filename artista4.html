@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista 4 - Top Artistas en Spotify</title>
+    <style>
+        /* General */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background: linear-gradient(to right, #5c2e02, #e07a36);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        nav .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #5c2e02;
+        }
+
+        /* Encabezado del Artista */
+        .header-artista {
+            background-image: url('fondoa4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-artista h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .header-artista p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .header-artista .boton {
+            background-color: #5c2e02;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-artista .boton:hover {
+            background-color: #e07a36;
+        }
+
+        /* Sección de Información del Artista */
+        .contenido {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contenido h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contenido p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Canciones Populares */
+        .canciones {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .cancion {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .cancion img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .cancion h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .cancion p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .cancion .boton {
+            background-color: #5c2e02;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .cancion .boton:hover {
+            background-color: #e07a36;
+        }
+
+        /* Pie de Página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Spotify" />
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="artista1.html">The Weeknd</a></li>
+            <li><a href="artista2.html">Coldplay</a></li>
+            <li><a href="artista3.html">Kendrick Lamar</a></li>
+            <li><a href="artista4.html">Morgan Wallen</a></li>
+            <li><a href="encuesta.html">Encuesta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado Principal del Artista -->
+    <header class="header-artista">
+        <h1>Morgan Wallen</h1>
+        <p>Género: Country </p>
+        <a href="https://open.spotify.com/intl-es/artist/4oUHIQIBe0LHzYfvXNW4QM" class="boton" target="_blank">Escuchar en Spotify</a>
+    </header>
+
+    <!-- Sección de Información del Artista -->
+    <section class="contenido">
+        <h2>Biografía</h2>
+        <p>
+            Morgan Cole Wallen  es un cantante estadounidense de música country, en marzo de 2023, alcanza la más 
+            alta posición del Billboard 200 tras vender 500.000 copias en una semana de su disco One Thing at a Time
+        </p>
+        
+        <!-- Canciones Populares -->
+        <h2>Canciones Populares</h2>
+        <div class="canciones">
+            <div class="cancion">
+                <img src="Cowgirls.jpg" alt="Cowgirls">
+                <h3>Cowgirls</h3>
+                <p>Álbum: One Thing at a Time</p>
+                <a href="https://open.spotify.com/intl-es/track/7fveJ3pk1eSfxBdVkzdXZ0" class="boton" target="_blank">Escuchar</a>
+            </div>
+            <div class="cancion">
+                <img src="chasin'you.jpg" alt="Chasin' You">
+                <h3>Chasin' You</h3>
+                <p>Álbum: If I Know Me </p>
+                <a href="https://open.spotify.com/intl-es/track/6hoZp0mZLv99KEA6cdvoHy" class="boton" target="_blank">Escuchar</a>
+            </div>
+            <div class="cancion">
+                <img src="lies.jpg" alt="Lies Lies Lies">
+                <h3>Lies Lies Lies</h3>
+                <p>Álbum: Lies Lies Lies</p>
+                <a href="https://open.spotify.com/intl-es/track/7Fzl7QaTu47WyP9R5S5mh5" class="boton" target="_blank">Escuchar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>Laura Balderrama</p>
+    </footer>
+</body>
+</html>
